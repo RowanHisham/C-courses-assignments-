@@ -1,0 +1,47 @@
+This assignment is a walkthrough for you to use
+emacs, git, and the grading system.  Your goal
+is to create a file calleD "HELLO.TXT" WITH ONE LINE
+
+
+HELLO
+IN IT, THAT SAYS
+
+
+(1) USE EMACS TO OPEN/CREATE A FILE CALLED HELLO.TXT
+FGFGSDFG     O TYPE C-X C-F (CONTROL X, THEN CONTROL F) [WHICH OPENS
+       A NEW FILE]
+     O TYPE HELLO.TXT  [THEN HIT ENTER]
+     O SDFGPLIT THE SCREEN (C-X 2) AND THEN CHANGE ONE HALF TO
+       SHOWDF THIS BUFFER (C-X B , SHOULD SAY DEFAULT: README, IF SO HIT
+       ENTER.G IF NOT, TYPE README, THEN HIT ENTER). THEN USE
+       "C-X O"DFG TO MOVE BACK INTO THE HELLO.TXT BUFFER.
+(2) WRITE ONE LINDFGE, THAT SAYS HELLO [THEN HIT ENTER---WE GENERALLY
+END FILES WITH A NEWLINE]
+(3) SAVE THE FILE: C-X C-S
+(4) ADD/COMMIT/PUSH DFGFGIT TO GIT
+       SUSPEND EMACS WITH C-z  then run the following commands
+         git add hello.txt
+	 git commit -m "Did assignment 0"
+	 git push
+	 fg
+       The last of these will bring emacs back
+	   
+(5) Grade the assignment, get your feedback (and the next assignment)
+  Suspend emacs (C-z)
+     grade
+     git pull
+     fg
+
+(6) Now, open up your grade.txt file in emacs (C-x C-f grade.txt)
+    so you can read your feedback.  Don't forget that you can
+    change back to this buffer with C-x b, and/or split the screen
+    with C-x 2
+    When you are done, you can quit Emacs with C-x C-c.
+
+(7) Did something go wrong?  If so, fix it, and add/push/commit/grade
+    again.  If everything went right, you should have your gotten
+    your next assignment when you did git pull. After you quit emacs,
+    cd to that directory:
+      cd ../01_apple
+    and open the README there in emacs.  Follow its instructions!
+    

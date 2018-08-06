@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+
+void counter(int *letters, int letter)
+{
+  if (isalpha((char)letter)) {
+    letter -= 97;
+    letters[letter]++;
+                
+  }          
+}
+
+int maxLetter(int *letters)
+{
+  
+  return 0;
+}
+
+int main(int argc, char **argv)
+{
+  if(argc != 2)
+    {
+      fprintf(stderr,"worng number of argument\n");
+      return EXIT_FAILURE; 
+    }
+  
+  int letters[26] = {0};
+  
+  FILE *data=fopen(argv[1],"r");
+  
+  if (data == NULL) {    
+    perror("Could not open file");    
+    return EXIT_FAILURE;  
+  }  
+  int letter;
+  while( (letter = fgetc(data)) != EOF)
+    {
+      counter(letters, letter);
+    }
+
+  int key = maxLetter(letters);
+  printf("%d",key);
+}

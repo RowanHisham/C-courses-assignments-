@@ -1,0 +1,15 @@
+Grading at Thu Aug  2 19:21:56 UTC 2018
+Attempting to compile breaker.c 
+make: 'breaker' is up to date.
+testcase1 passed
+#################################################
+testcase2:
+testcase2 passed
+#################################################
+testcase3:
+testcase3 failed
+#################################################
+testcase4:
+testcase4 passed
+
+Overall Grade: C
